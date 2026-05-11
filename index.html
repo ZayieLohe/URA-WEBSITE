@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URA Agritech | Smart Agriculture From Nagaland</title>
+    <meta
+      name="description"
+      content="URA Agritech builds modern farm technology for growers, cooperatives, and agri teams across Nagaland and India."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              leaf: "#1f7a4d",
+              soil: "#7a5130",
+              harvest: "#f5b84b",
+              mist: "#e8f1ed",
+              ink: "#14201b",
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "Segoe UI", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 20px 70px rgba(20, 32, 27, 0.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+      .hero-image {
+        background-image:
+          linear-gradient(90deg, rgba(10, 18, 14, 0.78), rgba(10, 18, 14, 0.42), rgba(10, 18, 14, 0.12)),
+          url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=2200&q=85");
+      }
+
+      .field-lines {
+        background-image:
+          linear-gradient(rgba(31, 122, 77, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(31, 122, 77, 0.08) 1px, transparent 1px);
+        background-size: 42px 42px;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f7faf7] text-ink antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/82 text-white backdrop-blur-md">
+      <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="#home" class="flex items-center gap-3" aria-label="URA Agritech home">
+          <span class="grid h-10 w-10 place-items-center rounded bg-harvest text-sm font-black text-ink">URA</span>
+          <span class="text-base font-bold tracking-wide">URA Agritech</span>
+        </a>
+        <div class="hidden items-center gap-8 text-sm font-medium text-white/82 md:flex">
+          <a class="transition hover:text-harvest" href="#solutions">Solutions</a>
+          <a class="transition hover:text-harvest" href="#platform">Platform</a>
+          <a class="transition hover:text-harvest" href="#impact">Impact</a>
+          <a class="transition hover:text-harvest" href="#contact">Contact</a>
+        </div>
+        <a
+          href="#contact"
+          class="hidden items-center gap-2 rounded bg-white px-4 py-2 text-sm font-bold text-ink transition hover:bg-harvest md:inline-flex"
+        >
+          <i data-lucide="send" class="h-4 w-4"></i>
+          Talk to us
+        </a>
+        <button
+          id="menuButton"
+          class="grid h-10 w-10 place-items-center rounded border border-white/18 md:hidden"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink px-4 py-4 md:hidden">
+        <div class="flex flex-col gap-4 text-sm font-semibold text-white/86">
+          <a href="#solutions">Solutions</a>
+          <a href="#platform">Platform</a>
+          <a href="#impact">Impact</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero-image relative flex min-h-[86vh] items-center bg-cover bg-center pt-20 text-white">
+        <div class="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="mb-5 inline-flex items-center gap-2 rounded bg-white/12 px-3 py-2 text-sm font-semibold text-white backdrop-blur">
+              <i data-lucide="map-pin" class="h-4 w-4 text-harvest"></i>
+              Nagaland rooted. India ready.
+            </p>
+            <h1 class="max-w-2xl text-5xl font-black leading-[1.02] sm:text-6xl lg:text-7xl">
+              URA Agritech
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-white/86 sm:text-xl">
+              Modern farm intelligence for hill growers, cooperatives, and agri teams building cleaner, sharper, more profitable harvests.
+            </p>
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#solutions"
+                class="inline-flex items-center justify-center gap-2 rounded bg-harvest px-6 py-3 text-sm font-extrabold text-ink transition hover:bg-white"
+              >
+                See solutions
+                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center gap-2 rounded border border-white/28 bg-white/10 px-6 py-3 text-sm font-extrabold text-white backdrop-blur transition hover:bg-white hover:text-ink"
+              >
+                Partner with URA
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-5 left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded bg-white/12 px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white/80 backdrop-blur sm:flex">
+          <span class="h-2 w-2 rounded-full bg-harvest"></span>
+          Smart agriculture systems
+        </div>
+      </section>
+
+      <section id="solutions" class="field-lines border-b border-ink/8 bg-white py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+            <div>
+              <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-leaf">What we build</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">
+                Agritech that works in real fields, not only in pitch decks.
+              </h2>
+            </div>
+            <p class="text-base leading-8 text-ink/68 sm:text-lg">
+              URA Agritech brings sensing, advisory, traceability, and market readiness into one clean operating layer for farmers and agri businesses.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-3">
+            <article class="rounded border border-ink/10 bg-white p-6 shadow-soft">
+              <div class="grid h-11 w-11 place-items-center rounded bg-mist text-leaf">
+                <i data-lucide="sprout" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-xl font-extrabold">Crop Intelligence</h3>
+              <p class="mt-3 leading-7 text-ink/66">
+                Field records, crop stage tracking, input planning, pest alerts, and harvest forecasting.
+              </p>
+            </article>
+            <article class="rounded border border-ink/10 bg-white p-6 shadow-soft">
+              <div class="grid h-11 w-11 place-items-center rounded bg-[#fff3d8] text-soil">
+                <i data-lucide="satellite" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-xl font-extrabold">Smart Monitoring</h3>
+              <p class="mt-3 leading-7 text-ink/66">
+                Sensor-ready dashboards for soil health, weather, irrigation, and farm activity.
+              </p>
+            </article>
+            <article class="rounded border border-ink/10 bg-white p-6 shadow-soft">
+              <div class="grid h-11 w-11 place-items-center rounded bg-[#e9f4ff] text-[#236192]">
+                <i data-lucide="route" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-xl font-extrabold">Traceable Supply</h3>
+              <p class="mt-3 leading-7 text-ink/66">
+                Lot tracking, quality checks, buyer-ready reports, and cleaner farm-to-market movement.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="bg-[#f7faf7] py-16 sm:py-24">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+          <div class="overflow-hidden rounded border border-ink/10 bg-white shadow-soft">
+            <img
+              class="h-full min-h-[360px] w-full object-cover"
+              src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1400&q=85"
+              alt="Farmer using digital agriculture tools in a green crop field"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-leaf">Platform</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">
+              One command center for growers and agri operators.
+            </h2>
+            <div class="mt-8 space-y-5">
+              <div class="flex gap-4">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded bg-ink text-white">
+                  <i data-lucide="scan-line" class="h-5 w-5"></i>
+                </span>
+                <div>
+                  <h3 class="font-extrabold">Map every plot</h3>
+                  <p class="mt-1 leading-7 text-ink/66">Register farms, crops, inputs, workers, harvest lots, and field visits.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded bg-leaf text-white">
+                  <i data-lucide="activity" class="h-5 w-5"></i>
+                </span>
+                <div>
+                  <h3 class="font-extrabold">Act on live signals</h3>
+                  <p class="mt-1 leading-7 text-ink/66">Turn weather, soil, and field observations into clear next actions.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded bg-harvest text-ink">
+                  <i data-lucide="badge-check" class="h-5 w-5"></i>
+                </span>
+                <div>
+                  <h3 class="font-extrabold">Prove quality</h3>
+                  <p class="mt-1 leading-7 text-ink/66">Prepare buyer reports with origin, handling, grading, and delivery records.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-ink py-16 text-white sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-6 md:grid-cols-4">
+            <div class="md:col-span-2">
+              <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-harvest">Nagaland focus</p>
+              <h2 class="mt-3 max-w-xl text-3xl font-black tracking-tight sm:text-5xl">
+                Built for terrain, climate, and community-led farming.
+              </h2>
+            </div>
+            <div class="rounded border border-white/12 bg-white/6 p-6">
+              <p class="text-4xl font-black text-harvest">01</p>
+              <p class="mt-3 font-bold">Hill-friendly planning for mixed crops and small plots.</p>
+            </div>
+            <div class="rounded border border-white/12 bg-white/6 p-6">
+              <p class="text-4xl font-black text-harvest">02</p>
+              <p class="mt-3 font-bold">Clean data for farmer groups, FPOs, and local buyers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="bg-white py-16 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+            <div>
+              <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-leaf">Impact areas</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Sharper farms. Stronger supply. Better decisions.</h2>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded border border-ink/10 p-5">
+                <i data-lucide="droplets" class="h-6 w-6 text-[#236192]"></i>
+                <h3 class="mt-4 font-extrabold">Water discipline</h3>
+                <p class="mt-2 text-sm leading-6 text-ink/64">Know when fields need water and when they do not.</p>
+              </div>
+              <div class="rounded border border-ink/10 p-5">
+                <i data-lucide="bug-off" class="h-6 w-6 text-leaf"></i>
+                <h3 class="mt-4 font-extrabold">Pest response</h3>
+                <p class="mt-2 text-sm leading-6 text-ink/64">Spot risk early and reduce blind chemical use.</p>
+              </div>
+              <div class="rounded border border-ink/10 p-5">
+                <i data-lucide="bar-chart-3" class="h-6 w-6 text-soil"></i>
+                <h3 class="mt-4 font-extrabold">Yield visibility</h3>
+                <p class="mt-2 text-sm leading-6 text-ink/64">Forecast production before harvest pressure starts.</p>
+              </div>
+              <div class="rounded border border-ink/10 p-5">
+                <i data-lucide="truck" class="h-6 w-6 text-harvest"></i>
+                <h3 class="mt-4 font-extrabold">Market readiness</h3>
+                <p class="mt-2 text-sm leading-6 text-ink/64">Move produce with records buyers can trust.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-[#eef5f1] py-16 sm:py-24">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-leaf">Contact</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Bring URA Agritech to your next growing season.</h2>
+            <p class="mt-5 max-w-xl text-lg leading-8 text-ink/68">
+              Based in Nagaland, serving agricultural teams who want cleaner operations and stronger farm outcomes.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <span class="inline-flex items-center gap-2 rounded bg-white px-4 py-3 text-sm font-bold shadow-sm">
+                <i data-lucide="map-pinned" class="h-4 w-4 text-leaf"></i>
+                Nagaland, India
+              </span>
+              <span class="inline-flex items-center gap-2 rounded bg-white px-4 py-3 text-sm font-bold shadow-sm">
+                <i data-lucide="leaf" class="h-4 w-4 text-leaf"></i>
+                Agritech systems
+              </span>
+            </div>
+          </div>
+          <form class="rounded border border-ink/10 bg-white p-6 shadow-soft sm:p-8">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <label class="block">
+                <span class="text-sm font-bold">Name</span>
+                <input class="mt-2 w-full rounded border border-ink/12 px-4 py-3 outline-none transition focus:border-leaf" type="text" placeholder="Your name" />
+              </label>
+              <label class="block">
+                <span class="text-sm font-bold">Phone</span>
+                <input class="mt-2 w-full rounded border border-ink/12 px-4 py-3 outline-none transition focus:border-leaf" type="tel" placeholder="+91" />
+              </label>
+            </div>
+            <label class="mt-5 block">
+              <span class="text-sm font-bold">Work type</span>
+              <select class="mt-2 w-full rounded border border-ink/12 px-4 py-3 outline-none transition focus:border-leaf">
+                <option>Farm digitization</option>
+                <option>Cooperative / FPO systems</option>
+                <option>Traceability and supply</option>
+                <option>Partnership</option>
+              </select>
+            </label>
+            <label class="mt-5 block">
+              <span class="text-sm font-bold">Message</span>
+              <textarea class="mt-2 min-h-32 w-full rounded border border-ink/12 px-4 py-3 outline-none transition focus:border-leaf" placeholder="Tell us what you grow, where, and what needs fixing."></textarea>
+            </label>
+            <button class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded bg-ink px-6 py-3 font-extrabold text-white transition hover:bg-leaf" type="submit">
+              Send enquiry
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-ink py-8 text-white">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-sm text-white/68 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <p class="font-semibold text-white">URA Agritech</p>
+        <p>Modern agriculture technology from Nagaland, India.</p>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+
+      const button = document.getElementById("menuButton");
+      const menu = document.getElementById("mobileMenu");
+
+      button.addEventListener("click", () => {
+        const isOpen = !menu.classList.contains("hidden");
+        menu.classList.toggle("hidden");
+        button.setAttribute("aria-expanded", String(!isOpen));
+      });
+
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+          button.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+  </body>
+</html>
